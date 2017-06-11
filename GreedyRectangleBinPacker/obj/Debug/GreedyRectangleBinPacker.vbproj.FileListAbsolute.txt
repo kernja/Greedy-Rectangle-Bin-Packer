@@ -1,0 +1,4 @@
+D:\git\GreedyRectangleBinPacker\GreedyRectangleBinPacker\bin\Debug\GreedyRectangleBinSolver.exe.config
+D:\git\GreedyRectangleBinPacker\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinSolver.exe
+D:\git\GreedyRectangleBinPacker\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinSolver.xml
+D:\git\GreedyRectangleBinPacker\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinSolver.pdb
