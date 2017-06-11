@@ -28,6 +28,8 @@ Partial Class frmMain
         Me.btnRun = New System.Windows.Forms.Button()
         Me.picRender = New System.Windows.Forms.PictureBox()
         Me.openDialog = New System.Windows.Forms.OpenFileDialog()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.saveDialog = New System.Windows.Forms.SaveFileDialog()
         CType(Me.picRender, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -80,11 +82,26 @@ Partial Class frmMain
         Me.openDialog.Filter = ".PNG|*.png|.BMP|*.bmp|.JPG|*.jpg"
         Me.openDialog.Multiselect = True
         '
+        'btnSave
+        '
+        Me.btnSave.Location = New System.Drawing.Point(470, 101)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(175, 23)
+        Me.btnSave.TabIndex = 5
+        Me.btnSave.Text = "Save Output"
+        Me.btnSave.UseVisualStyleBackColor = True
+        Me.btnSave.Visible = False
+        '
+        'saveDialog
+        '
+        Me.saveDialog.Filter = ".PNG|*.png"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(652, 561)
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.picRender)
         Me.Controls.Add(Me.btnRun)
         Me.Controls.Add(Me.btnDelete)
@@ -103,4 +120,6 @@ Partial Class frmMain
     Friend WithEvents btnRun As Button
     Friend WithEvents picRender As PictureBox
     Friend WithEvents openDialog As OpenFileDialog
+    Friend WithEvents btnSave As Button
+    Friend WithEvents saveDialog As SaveFileDialog
 End Class

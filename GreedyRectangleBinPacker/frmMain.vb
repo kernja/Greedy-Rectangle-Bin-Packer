@@ -29,7 +29,16 @@ Public Class frmMain
             binSolver.Solve(lstFiles.Items.Cast(Of String)().ToList())
             'render it to an image
             picRender.Image = binSolver.ToImage()
+            'let the user save
+            btnSave.Show()
         End If
 
+    End Sub
+
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+        If (saveDialog.ShowDialog() = DialogResult.OK) Then
+            Dim img As Image = picRender.Image
+            img.Save(saveDialog.FileName, Imaging.ImageFormat.Png)
+        End If
     End Sub
 End Class

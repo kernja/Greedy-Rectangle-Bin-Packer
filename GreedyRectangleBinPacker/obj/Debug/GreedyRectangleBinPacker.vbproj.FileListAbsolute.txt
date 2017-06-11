@@ -2,3 +2,13 @@ D:\git\GreedyRectangleBinPacker\GreedyRectangleBinPacker\bin\Debug\GreedyRectang
 D:\git\GreedyRectangleBinPacker\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinSolver.exe
 D:\git\GreedyRectangleBinPacker\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinSolver.xml
 D:\git\GreedyRectangleBinPacker\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinSolver.pdb
+D:\git\Greedy-Rectangle-Bin-Packer\GreedyRectangleBinPacker\bin\Debug\GreedyRectangleBinPacker.exe.config
+D:\git\Greedy-Rectangle-Bin-Packer\GreedyRectangleBinPacker\bin\Debug\GreedyRectangleBinPacker.exe
+D:\git\Greedy-Rectangle-Bin-Packer\GreedyRectangleBinPacker\bin\Debug\GreedyRectangleBinPacker.pdb
+D:\git\Greedy-Rectangle-Bin-Packer\GreedyRectangleBinPacker\bin\Debug\GreedyRectangleBinPacker.xml
+D:\git\Greedy-Rectangle-Bin-Packer\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinPacker.frmMain.resources
+D:\git\Greedy-Rectangle-Bin-Packer\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinPacker.Resources.resources
+D:\git\Greedy-Rectangle-Bin-Packer\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinPacker.vbproj.GenerateResource.Cache
+D:\git\Greedy-Rectangle-Bin-Packer\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinPacker.exe
+D:\git\Greedy-Rectangle-Bin-Packer\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinPacker.xml
+D:\git\Greedy-Rectangle-Bin-Packer\GreedyRectangleBinPacker\obj\Debug\GreedyRectangleBinPacker.pdb

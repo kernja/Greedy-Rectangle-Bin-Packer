@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{25A02468-C16D-4B51-B111-AD27089A53DC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>GreedyRectangleBinSolver.My.MyApplication</StartupObject>
-    <RootNamespace>GreedyRectangleBinSolver</RootNamespace>
-    <AssemblyName>GreedyRectangleBinSolver</AssemblyName>
+    <StartupObject>GreedyRectangleBinPacker.My.MyApplication</StartupObject>
+    <RootNamespace>GreedyRectangleBinPacker</RootNamespace>
+    <AssemblyName>GreedyRectangleBinPacker</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -20,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>GreedyRectangleBinSolver.xml</DocumentationFile>
+    <DocumentationFile>GreedyRectangleBinPacker.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>GreedyRectangleBinSolver.xml</DocumentationFile>
+    <DocumentationFile>GreedyRectangleBinPacker.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>

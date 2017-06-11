@@ -74,7 +74,11 @@
                         'move the cursor over by the width of the image.
                         tx = tx + nI.Width - 1
                     End If
+                    'break if there's nothing left to place
+                    If Not (_pictureList.Any(Function(item) item.Placed = False)) Then Exit For
                 Next tx
+                'break if there's nothing left to place
+                If Not (_pictureList.Any(Function(item) item.Placed = False)) Then Exit For
             Next ty
         End While
 
