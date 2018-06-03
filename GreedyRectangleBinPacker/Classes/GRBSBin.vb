@@ -16,8 +16,9 @@
         For Each s In files
             _pictureList.Add(New GRBSImage(s))
         Next
-        'sort all of the pictures by height, from biggest to smallest
-        _pictureList = _pictureList.OrderByDescending(Function(item) item.Height).ToList()
+        'sort all of the pictures by area, biggest to smallest
+        _pictureList = _pictureList.OrderByDescending(Function(item) item.Area).ToList()
+
         'total area of all images
         Dim area As Integer = _pictureList.Sum(Function(item) item.Area)
         Dim sqrt As Integer = Math.Sqrt(area)
@@ -39,6 +40,7 @@
 
         'we want to make sure that we have enough space for the two biggest items in our atlas
         If (_pictureList.Count > 1) Then
+
             Dim takeTwoWidth As Integer = _pictureList.Take(2).Sum(Function(item) item.Width)
             Dim takeTwoHeight As Integer = _pictureList.Take(2).Sum(Function(item) item.Height)
 
@@ -63,6 +65,9 @@
         Else
             _width = _height
         End If
+
+        'now order in height from tallest to smallest
+        _pictureList = _pictureList.OrderByDescending(Function(item) item.Height).ToList()
 
         'place the images
         'iterate through the picture list untili all are placed
