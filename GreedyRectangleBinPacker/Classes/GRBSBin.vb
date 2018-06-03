@@ -36,9 +36,24 @@
         If (_height < minHeight) Then
             _height = minHeight
         End If
+
+        'we want to make sure that we have enough space for the two biggest items in our atlas
+        If (_pictureList.Count > 1) Then
+            Dim takeTwoWidth As Integer = _pictureList.Take(2).Sum(Function(item) item.Width)
+            Dim takeTwoHeight As Integer = _pictureList.Take(2).Sum(Function(item) item.Height)
+
+            If (_width < takeTwoWidth) Then
+                _width = takeTwoWidth
+            End If
+            If (_height < takeTwoHeight) Then
+                _height = takeTwoHeight
+            End If
+        End If
+
         'round up these values to the next power of two
         _width = NearestSuperiorPowerOf2(_width)
         _height = NearestSuperiorPowerOf2(_height)
+
 
         'square the image
         'this isn't necessary, but it's helpful for 3d applications on that platforms
@@ -73,12 +88,16 @@
                         nI.Y = y
                         'move the cursor over by the width of the image.
                         tx = tx + nI.Width - 1
+                    ElseIf Not (eI Is Nothing) Then
+                        'skip ahead the width of the image
+                        'to speed up the atlas process
+                        tx += eI.Width - 1
                     End If
                     'break if there's nothing left to place
-                    If Not (_pictureList.Any(Function(item) item.Placed = False)) Then Exit For
+                    If (_pictureList.All(Function(item) item.Placed = True)) Then Exit For
                 Next tx
                 'break if there's nothing left to place
-                If Not (_pictureList.Any(Function(item) item.Placed = False)) Then Exit For
+                If Not (_pictureList.All(Function(item) item.Placed = True)) Then Exit For
             Next ty
         End While
 
