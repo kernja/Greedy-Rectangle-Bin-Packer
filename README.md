@@ -1,4 +1,5 @@
 # Greedy-Rectangle-Bin-Packer
+
 A quick, clean, and commented 2D rectangle bin packer coded in VB.Net.
 
 <img src="packer.PNG"/>
@@ -6,3 +7,5 @@ A quick, clean, and commented 2D rectangle bin packer coded in VB.Net.
 The code is cleanly organized into two classes ("GRBSBin.vb" and "GRBSImage.vb"), and the only code contained within the form itself pertains to selecting images, and calling the solver to run.  After the solver finishes it's work, it displays the output to a picturebox with an option to save the atlas to a PNG.
 
 If you use this code, please give credit!
+
+*This repo has been archived and is no longer under development. Please visit [kernja/rectangle-bin-packer-core](https://github.com/kernja/rectangle-bin-packer-core) for an updated version written in C# with .Net Core.*
