@@ -56,7 +56,6 @@
         _width = NearestSuperiorPowerOf2(_width)
         _height = NearestSuperiorPowerOf2(_height)
 
-
         'square the image
         'this isn't necessary, but it's helpful for 3d applications on that platforms
         'that require square textures
@@ -96,13 +95,13 @@
                     ElseIf Not (eI Is Nothing) Then
                         'skip ahead the width of the image
                         'to speed up the atlas process
-                        tx += eI.Width - 1
+                        tx = tx + eI.Width - 1
                     End If
                     'break if there's nothing left to place
                     If (_pictureList.All(Function(item) item.Placed = True)) Then Exit For
                 Next tx
                 'break if there's nothing left to place
-                If Not (_pictureList.All(Function(item) item.Placed = True)) Then Exit For
+                If (_pictureList.All(Function(item) item.Placed = True)) Then Exit For
             Next ty
         End While
 
